@@ -4,7 +4,7 @@ import { useAuth } from "../lib/auth";
 import Auth from "../components/Auth";
 import { useRouter } from "next/router";
 
-export default function SignUp() {
+const SignUp = () => {
   const auth = useAuth();
   const toast = useToast();
   const router = useRouter();
@@ -42,3 +42,5 @@ export default function SignUp() {
     </div>
   );
 }
+
+export default SignUp;
